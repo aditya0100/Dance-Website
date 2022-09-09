@@ -1,0 +1,57 @@
+doctype html
+html
+    head
+        title Dance Website 
+        style
+            include  ../static/style.css
+
+    body
+        nav#navbar
+            div#logo
+                img(src="../static/logo.png", alt="Aditya Dance Academy") 
+                p ADA
+            ul 
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact Us]  
+        section#introsection
+            div.head Welcome to Aditya's Dance Academy
+            div.moto You can't help putting yourself into Dance
+
+        section#missionsection
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection 
+                div.cardbox
+                    div.cardimg
+                        img(src="../static/1.png", alt="")   
+                    div.cardcontent
+                        |This is the best dance academy in Ranchi            
+            div.card
+                h3 Free Style 
+                div.cardbox
+                    div.cardimg
+                        img(src="../static/2.png", alt="")   
+                    div.cardcontent
+                        |This is the best dance academy in Ranchi                
+            div.card
+                h3 International level
+                div.cardbox
+                    div.cardimg
+                        img(src="../static/3.png", alt="")   
+                    div.cardcontent
+                        |This is the best dance academy in Ranchi                 
+
+        section#sponsorssection
+            h2 Our Sponsors
+            div.sponsors
+                img(src="../static/client1.png", alt="sponsor image")
+                img(src="../static/client2.png", alt="sponsor image")
+                img(src="../static/client5.png", alt="sponsor image")
+        footer
+            p Aditya's Dance Academy &copy All Rights Reserved 2022
+
+        script 
+            include ../static/index.js     
